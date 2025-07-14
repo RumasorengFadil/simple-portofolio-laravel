@@ -106,7 +106,7 @@
                             </div>
                             <div>
                                 <p class="text-sm text-gray-600">Email</p>
-                                <p class="text-gray-900 font-medium">your@email.com</p>
+                                <p class="text-gray-900 font-medium">fadilhr54@email.com</p>
                             </div>
                         </div>
                         
@@ -118,7 +118,7 @@
                             </div>
                             <div>
                                 <p class="text-sm text-gray-600">Phone</p>
-                                <p class="text-gray-900 font-medium">+1 (555) 123-4567</p>
+                                <p class="text-gray-900 font-medium">+62 852 4468 2780</p>
                             </div>
                         </div>
                         
@@ -131,7 +131,7 @@
                             </div>
                             <div>
                                 <p class="text-sm text-gray-600">Location</p>
-                                <p class="text-gray-900 font-medium">Your City, Country</p>
+                                <p class="text-gray-900 font-medium">Purwokerto, Indonesia</p>
                             </div>
                         </div>
                     </div>

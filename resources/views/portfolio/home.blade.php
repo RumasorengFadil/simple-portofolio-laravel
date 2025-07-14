@@ -7,7 +7,7 @@
     <div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-6" x-data="{ shown: false }" x-init="setTimeout(() => shown = true, 500)">
             <h1 x-show="shown" x-transition.duration.800ms class="text-5xl md:text-7xl font-bold mb-6">
-                Hi, I'm <span class="text-yellow-400">Your Name</span>
+                Hi, I'm <span class="text-yellow-400">Fadil Hijayat Rumasoreng</span>
             </h1>
             <p x-show="shown" x-transition.delay.200ms.duration.800ms class="text-xl md:text-2xl mb-8 text-gray-200">
                 Full Stack Developer & Creative Problem Solver
