@@ -35,9 +35,9 @@ Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('blog.sho
 
 // Authentication routes (Laravel Breeze)
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-        return redirect()->route('home');
-    })->name('dashboard');
+    // Route::get('/dashboard', function () {
+    //     return redirect()->route('home');
+    // })->name('dashboard');
     
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

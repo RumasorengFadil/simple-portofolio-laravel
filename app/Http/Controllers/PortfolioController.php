@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use App\Models\Contact;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Inertia\Inertia;
@@ -13,22 +14,21 @@ class PortfolioController extends Controller
     public function home()
     {
         $featuredProjects = Project::featured()->ordered()->take(3)->get();
-        
-        return Inertia::render('Home', [
+        return Inertia::render('Portfolio/Home', [
             'featuredProjects' => $featuredProjects
         ]);
     }
 
     public function about()
     {
-        return Inertia::render('About');
+        return Inertia::render('Portfolio/About');
     }
 
     public function projects()
     {
         $projects = Project::ordered()->get();
         
-        return Inertia::render('Projects', [
+        return Inertia::render('Portfolio/Projects', [
             'projects' => $projects
         ]);
     }
@@ -37,14 +37,14 @@ class PortfolioController extends Controller
     {
         $project = Project::findOrFail($id);
         
-        return Inertia::render('ProjectDetail', [
+        return Inertia::render('Portfolio/ProjectDetail', [
             'project' => $project
         ]);
     }
 
     public function contact()
     {
-        return Inertia::render('Contact');
+        return Inertia::render('Portfolio/Contact');
     }
 
     public function contactStore(Request $request)
